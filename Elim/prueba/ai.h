@@ -1,0 +1,34 @@
+#ifndef Ai_H
+#define Ai_H
+#include <stdio.h>
+int Duration;
+int SuperDuration;
+int bGameEnd;
+int CurAction;
+int CurGame;
+int SuperObj_Num;
+int SuperObj_X;
+int SuperObj_Y;
+int Teleport;
+int LoadedObjects;
+int US_Front;
+int US_Left;
+int US_Right;
+int CSLeft_R;
+int CSLeft_G;
+int CSLeft_B;
+int CSRight_R;
+int CSRight_G;
+int CSRight_B;
+int PositionX;
+int PositionY;
+int TM_State;
+int Compass;
+int Time;
+int WheelLeft;
+int WheelRight;
+int LED_1;
+int MyState;
+int AI_SensorNum;
+
+#endif

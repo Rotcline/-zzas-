@@ -80,7 +80,7 @@ DLL_EXPORT char* GetDebugInfo()
     sprintf(info, "Duration=%d;SuperDuration=%d;bGameEnd=%d;CurAction=%d;CurGame=%d;SuperObj_Num=%d;SuperObj_X=%d;SuperObj_Y=%d;Teleport=%d;LoadedObjects=%d;US_Front=%d;US_Left=%d;US_Right=%d;CSLeft_R=%d;CSLeft_G=%d;CSLeft_B=%d;CSRight_R=%d;CSRight_G=%d;CSRight_B=%d;PositionX=%d;PositionY=%d;TM_State=%d;Compass=%d;Time=%d;WheelLeft=%d;WheelRight=%d;LED_1=%d;MyState=%d;",Duration,SuperDuration,bGameEnd,CurAction,CurGame,SuperObj_Num,SuperObj_X,SuperObj_Y,Teleport,LoadedObjects,US_Front,US_Left,US_Right,CSLeft_R,CSLeft_G,CSLeft_B,CSRight_R,CSRight_G,CSRight_B,PositionX,PositionY,TM_State,Compass,Time,WheelLeft,WheelRight,LED_1,MyState);
     return info;
 }
- 
+
 DLL_EXPORT char* GetTeamName()
 {
      return "CoSpace Team";
@@ -250,7 +250,11 @@ void Game0()
             WheelRight=0;
             LED_1=2;
             MyState=0;
-            if(Duration == 1) {LoadedObjects = 0; } 
+<<<<<<< HEAD
+            if(Duration == 1) {LoadedObjects = 0; }
+=======
+            if(Duration == 1) {LoadedObjects = 0; }
+>>>>>>> Elim
             break;
         case 2:
             WheelLeft=-2;
@@ -269,7 +273,11 @@ void Game0()
             WheelRight=0;
             LED_1=0;
             MyState=0;
-             Teleport =1;  
+<<<<<<< HEAD
+             Teleport =1;
+=======
+             Teleport =1;
+>>>>>>> Elim
             LoadedObjects = 0;
             WheelLeft = 0;  WheelRight = 0;  LED_1=0;
             Duration = 0;   SuperDuration = 0;
@@ -616,7 +624,11 @@ void Game1()
 			if(Duration < 4){
 				WheelLeft=-2;
             	WheelRight=-2;
-			} 
+<<<<<<< HEAD
+			}
+=======
+			}
+>>>>>>> Elim
             break;
         case 6:
             WheelLeft=-3;
@@ -767,4 +779,3 @@ DLL_EXPORT void OnTimer()
             break;
     }
 }
-
